@@ -99,9 +99,11 @@ You can also open an issue to discuss ideas or request a feature.
 
 ---
 
-## License
+## Competing Interests
 
-This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
+The author(s) declare no competing interests. 
+
+Please see [Scientific Data's policies](https://www.nature.com/sdata/policies) for more information on what may constitute a competing interest.
 
 ---
 
