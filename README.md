@@ -111,7 +111,7 @@ Please see [Scientific Data's policies](https://www.nature.com/sdata/policies) f
 
 - Built on the [GloHydroRes dataset](https://doi.org/10.1038/s41597-025-04975-0)
 - Developed using [Plotly](https://plotly.com/python/) and [Pandas](https://pandas.pydata.org/)
-- Inspired by open science and inclusive visualization principles. We would like to acknowledge the contributions of Dr. Jane Doe for her valuable insights into hydropower data analysis, and Mr. John Smith for his assistance with the data preprocessing scripts. This work was supported in part by the National Science Foundation under Grant No. 123456.
+- Inspired by open science and inclusive visualization principles. We would like to acknowledge the contributions of Dr. Jane Doe for her valuable insights into hydropower data analysis, and Mr. John Smith for his assistance with the data preprocessing scripts.
 
 ---
 
