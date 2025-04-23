@@ -1,123 +1,161 @@
 # GloHydroRes-VizLab
 
-**Exploring better ways to visualize global hydropower infrastructure and reservoir data.**  
-Accessible, informative, and visually refined.
+**Visualizing Global Hydropower Infrastructure with Clarity, Accessibility, and Insight.**
 
 ---
 
-## Project Overview
+## Overview
 
-GloHydroRes-VizLab is a data visualization project focused on redesigning and enhancing the visual interpretation of the [GloHydroRes](https://doi.org/10.1038/s41597-025-04975-0) dataset. This dataset combines open-source information on global hydropower plants and reservoirs. Our goal is to make these insights:
+**GloHydroRes-VizLab** is a data-driven visualization project that enhances the interpretability of the [GloHydroRes](https://zenodo.org/records/14526360) dataset—an open-source compilation of global hydropower plant and reservoir data. The objective is to support research, policy design, and public understanding through:
 
-- **More accessible** (including color-blind friendly)
-- **More interpretable** through interactive, intuitive graphics
-- **More insightful** for researchers, policymakers, and the public
+- **Accessible** design, including color-blind friendly palettes  
+- **Interpretable** and interactive graphical representations  
+- **Insightful** presentations that reveal geographic and temporal trends
 
 ---
 
-## Project Structure
+## Dataset
+
+The project uses the *GloHydroRes* dataset (Shah et al., 2025), which integrates spatial and technical information on hydropower facilities globally. For citation, please refer to:
+
+> Shah, J., Hu, J., Edelenbosch, O., & van Vliet, M. (2025). *Global dataset combining open-source hydropower plant and reservoir data*. Scientific Data, 12. https://doi.org/10.1038/s41597-025-04975-0
+
+---
+
+## Project Directory
 
 ```
-hydro_viz_project/
+GloHydroRes-VizLab/
 ├── data/
-│   └── GloHydroRes_vs1.csv                # Source dataset (place here manually)
+│   └── GloHydroRes_vs1.csv                # Source dataset (to be placed manually)
 ├── scripts/
-│   ├── load_data.py                       # Loads and preprocesses raw data
-│   ├── plot_top_countries.py              # Bar chart: Top 10 countries by capacity
-│   ├── plot_year_distribution.py          # Histogram: Commissioning year distribution
-│   ├── plot_facility_map.py               # Interactive map: Plant location + capacity
-│   └── main.py                            # Main script to generate all visuals
-├── requirements.txt                       # Required Python packages
+│   ├── load_data.py                       # Data loading and preprocessing
+│   ├── plot_top_countries.py              # Top hydropower countries visualization
+│   ├── plot_year_distribution.py          # Commissioning years distribution
+│   ├── plot_facility_map.py               # Interactive plant map
+│   └── main.py                            # Master script for visualization generation
+├── requirements.txt                       # Python dependencies
 └── README.md                              # Project documentation
 ```
 
 ---
 
-## Getting Started
+## Installation and Usage
 
-### 1. Clone the repository
+### 1. Clone the Repository
+
 ```bash
-git clone https://github.com/yourusername/GloHydroRes-VizLab.git
+git clone https://github.com/wailywang/GloHydroRes-VizLab.git
 cd GloHydroRes-VizLab
 ```
 
-### 2. Create and activate a virtual environment
+### 2. Set Up the Environment
+
 ```bash
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
-```
-
-### 3. Install dependencies
-```bash
 pip install -r requirements.txt
 ```
 
-### 4. Download the data
-Place the file `GloHydroRes_vs1.csv` inside the `data/` directory.  
-You can download it here: [Zenodo – GloHydroRes](https://doi.org/10.5281/zenodo.14526360)
+### 3. Download the Dataset
 
-### 5. Run the visualizations
+Place `GloHydroRes_vs1.csv` in the `data/` directory.  
+Dataset DOI: [10.5281/zenodo.14526360](https://doi.org/10.5281/zenodo.14526360)
+
+### 4. Run Visualizations
+
 ```bash
 python scripts/main.py
 ```
 
-Each figure will open interactively in your browser or display window.
+Each plot will be rendered interactively in your browser or window.
 
 ---
 
-## Visualizations Included
+## Visual Modules
 
-### ✅ Top 10 Countries by Installed Capacity
-Bar chart showing the countries with the highest cumulative hydropower capacity.
-
-### ✅ Distribution of Commissioning Years
-Histogram displaying the number of hydropower plants commissioned by year.
-
-### ✅ Hydropower Facility Map
-Interactive map showing facility locations, with bubble size and color indicating capacity.
+- **Top Hydropower Countries**: Bar chart ranking by installed capacity  
+- **Commissioning Year Histogram**: Distribution of facilities by year  
+- **Facility Map**: Interactive map with capacity-encoded markers
 
 ---
 
-## Accessibility Features
+## Accessibility Considerations
 
-- Color-blind safe palettes (Viridis, Bold)
-- Intuitive layouts with labeled axes and legends
-- High-contrast themes and scalable figures
-
----
-
-## Contributing
-
-We welcome contributions of new visualizations, accessibility improvements, or geographic deep dives!
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/your-feature`)
-3. Commit your changes
-4. Open a pull request
-
-You can also open an issue to discuss ideas or request a feature.
+- Color schemes safe for color vision deficiencies (e.g., Viridis)
+- Clear legends and axis labels
+- Scalable vector outputs for readability
 
 ---
 
-## Competing Interests
+## Contribution Guidelines
 
-The author(s) declare no competing interests. 
+We welcome enhancements in visual style, geographic analysis, or code optimization.
 
-Please see [Scientific Data's policies](https://www.nature.com/sdata/policies) for more information on what may constitute a competing interest.
+1. Fork the repo and create a new branch  
+2. Implement your changes  
+3. Submit a pull request or open an issue for discussion
+
+---
+
+## Citation
+
+To cite this project or dataset in academic work:
+
+```bibtex
+@article{shah2025glohydrores,
+  author = {Shah, Jignesh and Hu, Jing and Edelenbosch, Oreane and van Vliet, Michelle},
+  year = {2025},
+  month = {04},
+  title = {Global dataset combining open-source hydropower plant and reservoir data},
+  journal = {Scientific Data},
+  volume = {12},
+  doi = {10.1038/s41597-025-04975-0}
+}
+```
 
 ---
 
 ## Acknowledgements
 
-- Built on the [GloHydroRes dataset](https://doi.org/10.1038/s41597-025-04975-0)
-- Developed using [Plotly](https://plotly.com/python/) and [Pandas](https://pandas.pydata.org/)
-- Inspired by open science and inclusive visualization principles. We would like to acknowledge the contributions of Dr. Jane Doe for her valuable insights into hydropower data analysis, and Mr. John Smith for his assistance with the data preprocessing scripts.
+- Dataset: [GloHydroRes, Scientific Data](https://zenodo.org/records/14526360)
+- Paper: [Global dataset combining open-source hydropower plant and reservoir data](https://doi.org/10.1038/s41597-025-04975-0)
+- Tools: [Plotly](https://plotly.com/python/), [Pandas](https://pandas.pydata.org/)
+- Special thanks to **Dr. Jane Doe** for hydropower systems feedback, and **Mr. John Smith** for scripting assistance.
 
 ---
 
-## Links
+## Competing Interests
 
-- GloHydroRes paper: [Nature Scientific Data](https://doi.org/10.1038/s41597-025-04975-0)
-- loHydroRes dataset: [Zenodo](https://doi.org/10.5281/zenodo.14526360)
+The authors declare no competing interests.  
+Refer to [Scientific Data policies](https://www.nature.com/sdata/policies) for definitions.
+
 
 ---
+
+## Source Datasets
+
+The GloHydroRes dataset is a harmonized and cleaned compilation built from the following primary data sources:
+
+- **Global Power Plant Database** by World Resources Institute (WRI):  
+  https://datasets.wri.org/dataset/globalpowerplantdatabase  
+- **HILARRI (Hydropower Infrastructure – Lakes, Reservoirs, and Rivers), v2**:  
+  https://hydrosource.ornl.gov/dataset/hilarri-v2  
+- **Existing Hydropower Assets (EHA) Plant Database, 2022**:  
+  https://hydrosource.ornl.gov/dataset/EHA2022  
+- **JRC Hydro-power Plants Database**:  
+  https://github.com/energy-modelling-toolkit/hydro-power-database/  
+- **RePP Africa** – Renewable Power Plant Database for Africa:  
+  https://www.nature.com/articles/s41597-022-01922-1  
+- **Global Reservoir and Dam (GRanD) Database**:  
+  https://depts.washington.edu/saswe/grand/GRanD_Technical_Documentation_v1_1.pdf  
+- **GeoDAR (Georeferenced Global Dams and Reservoirs)**:  
+  https://essd.copernicus.org/articles/14/1869/2022/  
+- **Global Dam Tracker (GDAT)**:  
+  https://www.nature.com/articles/s41597-023-02008-2  
+- **HydroLAKES**:  
+  https://www.hydrosheds.org/products/hydrolakes  
+- **HydroSHEDs 15 arc-second DEM** (used to determine dam elevation):  
+  https://www.hydrosheds.org/hydrosheds-core-downloads
+
+These data sources were pre-processed and merged to create the unified GloHydroRes dataset used in this project.
