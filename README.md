@@ -87,6 +87,20 @@ Each plot will be rendered interactively in your browser or window.
 - Clear legends and axis labels
 - Scalable vector outputs for readability
 
+## Sustainable Development Goals
+
+![Sustainable Development Goals](SDG.png)
+
+### SDG 7: Affordable and Clean Energy
+
+Hydropower is a key renewable energy source that contributes significantly to global clean energy supply. This project supports SDG 7 by:
+
+- Promoting transparency in hydropower infrastructure data  
+- Enabling better planning and optimization through data visualization  
+- Highlighting both opportunities and trade-offs in sustainable energy development
+
+By integrating hydropower data into an accessible dashboard, our project encourages evidence-based approaches to clean and affordable energy for all.
+
 ---
 
 ## Contribution Guidelines
