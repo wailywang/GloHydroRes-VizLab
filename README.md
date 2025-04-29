@@ -121,7 +121,7 @@ To cite this project or dataset in academic work:
 - Dataset: [GloHydroRes, Scientific Data](https://zenodo.org/records/14526360)
 - Paper: [Global dataset combining open-source hydropower plant and reservoir data](https://doi.org/10.1038/s41597-025-04975-0)
 - Tools: [Plotly](https://plotly.com/python/), [Pandas](https://pandas.pydata.org/)
-- Special thanks to **Dr. Jane Doe** for hydropower systems feedback, and **Mr. John Smith** for scripting assistance.
+- This project was completed as part of the course INFOSCI 301 – Data Visualization and Information Aesthetics at Duke Kunshan University. We would like to sincerely thank Prof. Luyao Zhang for her guidance throughout the semester, and Prof. Ming-Chun Huang for his valuable feedback during the DKU Digital Technology for Sustainability Symposium. Special thanks also go to Dr. Dongping Liu and Dr. David Schaaf for their helpful insights and encouragement during the development of this project. Lastly, we thank my classmates in INFOSCI 301 for their thoughtful input and collaboration during the semester.
 
 ---
 
