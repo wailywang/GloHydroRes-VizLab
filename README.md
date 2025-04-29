@@ -77,6 +77,7 @@ Each plot will be rendered interactively in your browser or window.
 - **Top Hydropower Countries**: Bar chart ranking by installed capacity  
 - **Commissioning Year Histogram**: Distribution of facilities by year  
 - **Facility Map**: Interactive map with capacity-encoded markers
+- **Streamlit**: [Render-Dashboard](https://info301-dash-dashboard.onrender.com/)
 
 ---
 
