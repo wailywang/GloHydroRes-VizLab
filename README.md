@@ -34,7 +34,7 @@
 <video src="Demo Video.mp4" controls width="100%"></video>  
 
 🖼️ **Poster Preview:**  
-[📄 View Poster](poster.pdf)
+📄[View Poster](Poster.pdf)
 
 ---
 
@@ -69,33 +69,37 @@ It also improved my skills in collaborative version control, open-source licensi
 
 ---
 
----
-
-## Dataset
-
-The project uses the *GloHydroRes* dataset (Shah et al., 2025), which integrates spatial and technical information on hydropower facilities globally. For citation, please refer to:
-
-> Shah, J., Hu, J., Edelenbosch, O., & van Vliet, M. (2025). *Global dataset combining open-source hydropower plant and reservoir data*. Scientific Data, 12. https://doi.org/10.1038/s41597-025-04975-0
-
----
-
 ## Repository Structure and Navigation
 
 ```
 GloHydroRes-VizLab/
-├── data/
-│   └── GloHydroRes_vs1.csv                # Source dataset (to be placed manually)
-├── scripts/
-│   ├── load_data.py                       # Data loading and preprocessing
-│   ├── plot_top_countries.py              # Top hydropower countries visualization
-│   ├── plot_year_distribution.py          # Commissioning years distribution
-│   ├── plot_facility_map.py               # Interactive plant map
-│   └── main.py                            # Master script for visualization generation
-├── requirements.txt                       # Python dependencies
-└── README.md                              # Project documentation
-----Demo Video.mp4
-----poster.pdf
+├── data/ # Raw and merged datasets
+│ ├── GloHydroRes_vs1.csv
+│ ├── GlobalLandTemperaturesByCountry.csv
+│ └── IBT_GloHydroRes_Hydropower_Combined.csv
+│
+├── scripts/ # Python visualization modules
+│ ├── main.py # Dashboard entry point
+│ ├── preprocessing.py # Data cleaning pipeline
+│ ├── plot_choropleth.py # Choropleth map
+│ ├── plot_bubble.py # Bubble map
+│ ├── plot_sunburst.py # Sunburst chart
+│ ├── plot_timeseries.py # Time series plots
+│ ├── plot_animated.py # Animated facility evolution
+│ └── plot_treemap.py # Treemap of facility/country shares
+│
+├── Demo Video.mp4 # Final demo presentation
+├── Poster.pdf # Final poster for presentation
+├── E_SDG_PRINT-07.jpg # SDG logo used in README
+├── SDG.png # Alternative SDG visualization icon
+├── requirements.txt # Environment setup
+└── README.md # Project overview and navigation
 ```
+### Navigation Tips
+
+- Run the dashboard via `main.py` in `scripts/`  
+- View processed datasets in `/data/`  
+- Demo & poster available in root directory  
 
 ---
 
@@ -154,14 +158,39 @@ This dashboard visualizes global hydropower infrastructure using multiple intera
 - Scalable vector outputs for readability
 
 ---
+## Dataset
 
-## Contribution Guidelines
+The project uses the *GloHydroRes* dataset (Shah et al., 2025), which integrates spatial and technical information on hydropower facilities globally. For citation, please refer to:
 
-We welcome enhancements in visual style, geographic analysis, or code optimization.
+> Shah, J., Hu, J., Edelenbosch, O., & van Vliet, M. (2025). *Global dataset combining open-source hydropower plant and reservoir data*. Scientific Data, 12. https://doi.org/10.1038/s41597-025-04975-0
 
-1. Fork the repo and create a new branch  
-2. Implement your changes  
-3. Submit a pull request or open an issue for discussion
+### Source Datasets
+
+The GloHydroRes dataset is a harmonized and cleaned compilation built from the following primary data sources:
+
+- **Global Power Plant Database** by World Resources Institute (WRI):  
+  https://datasets.wri.org/dataset/globalpowerplantdatabase  
+- **HILARRI (Hydropower Infrastructure – Lakes, Reservoirs, and Rivers), v2**:  
+  https://hydrosource.ornl.gov/dataset/hilarri-v2  
+- **Existing Hydropower Assets (EHA) Plant Database, 2022**:  
+  https://hydrosource.ornl.gov/dataset/EHA2022  
+- **JRC Hydro-power Plants Database**:  
+  https://github.com/energy-modelling-toolkit/hydro-power-database/  
+- **RePP Africa** – Renewable Power Plant Database for Africa:  
+  https://www.nature.com/articles/s41597-022-01922-1  
+- **Global Reservoir and Dam (GRanD) Database**:  
+  https://depts.washington.edu/saswe/grand/GRanD_Technical_Documentation_v1_1.pdf  
+- **GeoDAR (Georeferenced Global Dams and Reservoirs)**:  
+  https://essd.copernicus.org/articles/14/1869/2022/  
+- **Global Dam Tracker (GDAT)**:  
+  https://www.nature.com/articles/s41597-023-02008-2  
+- **HydroLAKES**:  
+  https://www.hydrosheds.org/products/hydrolakes  
+- **HydroSHEDs 15 arc-second DEM** (used to determine dam elevation):  
+  https://www.hydrosheds.org/hydrosheds-core-downloads
+
+These data sources were pre-processed and merged to create the unified GloHydroRes dataset used in this project.
+
 
 ---
 
@@ -199,29 +228,8 @@ Refer to [Scientific Data policies](https://www.nature.com/sdata/policies) for d
 
 ---
 
-## Source Datasets
+## Disclaimer
 
-The GloHydroRes dataset is a harmonized and cleaned compilation built from the following primary data sources:
+This repository is part of a final course project submitted for academic credit in INFOSCI 301 – Data Visualization and Information Aesthetics at Duke Kunshan University, Spring 2025.
 
-- **Global Power Plant Database** by World Resources Institute (WRI):  
-  https://datasets.wri.org/dataset/globalpowerplantdatabase  
-- **HILARRI (Hydropower Infrastructure – Lakes, Reservoirs, and Rivers), v2**:  
-  https://hydrosource.ornl.gov/dataset/hilarri-v2  
-- **Existing Hydropower Assets (EHA) Plant Database, 2022**:  
-  https://hydrosource.ornl.gov/dataset/EHA2022  
-- **JRC Hydro-power Plants Database**:  
-  https://github.com/energy-modelling-toolkit/hydro-power-database/  
-- **RePP Africa** – Renewable Power Plant Database for Africa:  
-  https://www.nature.com/articles/s41597-022-01922-1  
-- **Global Reservoir and Dam (GRanD) Database**:  
-  https://depts.washington.edu/saswe/grand/GRanD_Technical_Documentation_v1_1.pdf  
-- **GeoDAR (Georeferenced Global Dams and Reservoirs)**:  
-  https://essd.copernicus.org/articles/14/1869/2022/  
-- **Global Dam Tracker (GDAT)**:  
-  https://www.nature.com/articles/s41597-023-02008-2  
-- **HydroLAKES**:  
-  https://www.hydrosheds.org/products/hydrolakes  
-- **HydroSHEDs 15 arc-second DEM** (used to determine dam elevation):  
-  https://www.hydrosheds.org/hydrosheds-core-downloads
-
-These data sources were pre-processed and merged to create the unified GloHydroRes dataset used in this project.
+---
