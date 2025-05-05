@@ -8,14 +8,16 @@
 - [Project Overview](#project-overview)  
 - [Authors and Contributions](#authors-and-contributions)  
 - [Statement of Contribution to SDGs](#statement-of-contribution-to-sdgs)  
-- [Statement of Intellectual and Professional Growth](#statement-of-intellectual-and-professional-growth)  
+- [Statement of Intellectual and Professional Growth](#statement-of-intellectual-and-professional-growth)
+- [Accessibility Considerations](#accessibility-considerations)  
+- [Dataset](#dataset)  
+  - [Source Datasets](#source-datasets) 
 - [Repository Structure and Navigation](#repository-structure-and-navigation)  
 - [Installation and Usage](#installation-and-usage)  
 - [Visual Modules](#visual-modules)  
-- [Accessibility Considerations](#accessibility-considerations)  
-- [Source Datasets](#source-datasets)  
 - [Citation](#citation)  
 - [Acknowledgements](#acknowledgements)  
+- [Competing Interests](#competing-interests)  
 - [Disclaimer](#disclaimer)  
 
 ---
@@ -33,8 +35,7 @@
 🎥 **Demo Video Preview:**  
 <video src="Demo Video.mp4" controls width="100%"></video>  
 
-🖼️ **Poster Preview:**  
-📄[View Poster](Poster.pdf)
+🖼️ **Poster Preview:**  [View Poster](Poster.pdf)
 
 ---
 
@@ -57,6 +58,7 @@ This project contributes to **UN Sustainable Development Goal 7: Affordable and 
 - Supporting equitable access to data on renewable energy
   
 ---
+
 ## Statement of Intellectual and Professional Growth
 
 This project deepened my ability to synthesize large, geospatial datasets and transform them into interactive tools for analysis. I gained hands-on experience with:
@@ -66,6 +68,48 @@ This project deepened my ability to synthesize large, geospatial datasets and tr
 - Communicating complex trends to diverse audiences  
 
 It also improved my skills in collaborative version control, open-source licensing, and sustainable development framing.
+
+---
+
+## Accessibility Considerations
+
+- Color schemes safe for color vision deficiencies (e.g., Viridis)
+- Clear legends and axis labels
+- Scalable vector outputs for readability
+
+---
+## Dataset
+
+The project uses the *GloHydroRes* dataset (Shah et al., 2025), which integrates spatial and technical information on hydropower facilities globally. For citation, please refer to:
+
+> Shah, J., Hu, J., Edelenbosch, O., & van Vliet, M. (2025). *Global dataset combining open-source hydropower plant and reservoir data*. Scientific Data, 12. https://doi.org/10.1038/s41597-025-04975-0
+
+### Source Datasets
+
+The GloHydroRes dataset is a harmonized and cleaned compilation built from the following primary data sources:
+
+- **Global Power Plant Database** by World Resources Institute (WRI):  
+  https://datasets.wri.org/dataset/globalpowerplantdatabase  
+- **HILARRI (Hydropower Infrastructure – Lakes, Reservoirs, and Rivers), v2**:  
+  https://hydrosource.ornl.gov/dataset/hilarri-v2  
+- **Existing Hydropower Assets (EHA) Plant Database, 2022**:  
+  https://hydrosource.ornl.gov/dataset/EHA2022  
+- **JRC Hydro-power Plants Database**:  
+  https://github.com/energy-modelling-toolkit/hydro-power-database/  
+- **RePP Africa** – Renewable Power Plant Database for Africa:  
+  https://www.nature.com/articles/s41597-022-01922-1  
+- **Global Reservoir and Dam (GRanD) Database**:  
+  https://depts.washington.edu/saswe/grand/GRanD_Technical_Documentation_v1_1.pdf  
+- **GeoDAR (Georeferenced Global Dams and Reservoirs)**:  
+  https://essd.copernicus.org/articles/14/1869/2022/  
+- **Global Dam Tracker (GDAT)**:  
+  https://www.nature.com/articles/s41597-023-02008-2  
+- **HydroLAKES**:  
+  https://www.hydrosheds.org/products/hydrolakes  
+- **HydroSHEDs 15 arc-second DEM** (used to determine dam elevation):  
+  https://www.hydrosheds.org/hydrosheds-core-downloads
+
+These data sources were pre-processed and merged to create the unified GloHydroRes dataset used in this project.
 
 ---
 
@@ -148,49 +192,6 @@ This dashboard visualizes global hydropower infrastructure using multiple intera
 
 > **Interactive Dashboard (Built with Streamlit)**  
 > [Explore the Live App »](https://info301-dash-dashboard.onrender.com/)
-
----
-
-## Accessibility Considerations
-
-- Color schemes safe for color vision deficiencies (e.g., Viridis)
-- Clear legends and axis labels
-- Scalable vector outputs for readability
-
----
-## Dataset
-
-The project uses the *GloHydroRes* dataset (Shah et al., 2025), which integrates spatial and technical information on hydropower facilities globally. For citation, please refer to:
-
-> Shah, J., Hu, J., Edelenbosch, O., & van Vliet, M. (2025). *Global dataset combining open-source hydropower plant and reservoir data*. Scientific Data, 12. https://doi.org/10.1038/s41597-025-04975-0
-
-### Source Datasets
-
-The GloHydroRes dataset is a harmonized and cleaned compilation built from the following primary data sources:
-
-- **Global Power Plant Database** by World Resources Institute (WRI):  
-  https://datasets.wri.org/dataset/globalpowerplantdatabase  
-- **HILARRI (Hydropower Infrastructure – Lakes, Reservoirs, and Rivers), v2**:  
-  https://hydrosource.ornl.gov/dataset/hilarri-v2  
-- **Existing Hydropower Assets (EHA) Plant Database, 2022**:  
-  https://hydrosource.ornl.gov/dataset/EHA2022  
-- **JRC Hydro-power Plants Database**:  
-  https://github.com/energy-modelling-toolkit/hydro-power-database/  
-- **RePP Africa** – Renewable Power Plant Database for Africa:  
-  https://www.nature.com/articles/s41597-022-01922-1  
-- **Global Reservoir and Dam (GRanD) Database**:  
-  https://depts.washington.edu/saswe/grand/GRanD_Technical_Documentation_v1_1.pdf  
-- **GeoDAR (Georeferenced Global Dams and Reservoirs)**:  
-  https://essd.copernicus.org/articles/14/1869/2022/  
-- **Global Dam Tracker (GDAT)**:  
-  https://www.nature.com/articles/s41597-023-02008-2  
-- **HydroLAKES**:  
-  https://www.hydrosheds.org/products/hydrolakes  
-- **HydroSHEDs 15 arc-second DEM** (used to determine dam elevation):  
-  https://www.hydrosheds.org/hydrosheds-core-downloads
-
-These data sources were pre-processed and merged to create the unified GloHydroRes dataset used in this project.
-
 
 ---
 
