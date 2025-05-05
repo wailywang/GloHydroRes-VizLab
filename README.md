@@ -4,13 +4,70 @@
 
 ---
 
-## Overview
+## Table of Contents
+- [Project Overview](#project-overview)  
+- [Authors and Contributions](#authors-and-contributions)  
+- [Statement of Contribution to SDGs](#statement-of-contribution-to-sdgs)  
+- [Statement of Intellectual and Professional Growth](#statement-of-intellectual-and-professional-growth)  
+- [Repository Structure and Navigation](#repository-structure-and-navigation)  
+- [Installation and Usage](#installation-and-usage)  
+- [Visual Modules](#visual-modules)  
+- [Accessibility Considerations](#accessibility-considerations)  
+- [Source Datasets](#source-datasets)  
+- [Citation](#citation)  
+- [Acknowledgements](#acknowledgements)  
+- [Disclaimer](#disclaimer)  
 
-**GloHydroRes-VizLab** is a data-driven visualization project that enhances the interpretability of the [GloHydroRes](https://zenodo.org/records/14526360) dataset—an open-source compilation of global hydropower plant and reservoir data. The objective is to support research, policy design, and public understanding through:
+---
 
-- **Accessible** design, including color-blind friendly palettes  
-- **Interpretable** and interactive graphical representations  
-- **Insightful** presentations that reveal geographic and temporal trends
+## Project Overview
+
+**GloHydroRes-VizLab** is an interactive dashboard built with Streamlit to visualize the [GloHydroRes](https://zenodo.org/records/14526360) dataset—an open-access compilation of global hydropower plants and reservoirs. This project enhances interpretability through:
+
+- Color-blind-friendly visual design  
+- Dynamic geospatial and temporal graphs  
+- Transparent representation of hydropower development trends  
+
+🔗 **[Live Dashboard](https://info301-dash-dashboard.onrender.com/)**  
+
+🎥 **Demo Video Preview:**  
+<video src="Demo Video.mp4" controls width="100%"></video>  
+
+🖼️ **Poster Preview:**  
+[📄 View Poster](poster.pdf)
+
+---
+
+## Authors and Contributions
+
+- **Yuxi Wang**: Data integration, GitHub management, visualization dashboard development.
+- **Mohamed Sami Koudir**: Machine learning analysis, anomaly detection, visual design optimization.
+- **Yuxing Zhang**: Literature review, cross-disciplinary integration, stakeholder communication strategies.​
+
+---
+
+## Statement of Contribution to SDGs
+
+![SDG 7](https://sdgs.un.org/sites/default/files/2020-07/7_0.png)
+
+This project contributes to **UN Sustainable Development Goal 7: Affordable and Clean Energy** by:
+
+- Promoting transparency in hydropower infrastructure  
+- Enabling evidence-based energy policy and planning  
+- Supporting equitable access to data on renewable energy
+  
+---
+## Statement of Intellectual and Professional Growth
+
+This project deepened my ability to synthesize large, geospatial datasets and transform them into interactive tools for analysis. I gained hands-on experience with:
+
+- Visual storytelling via Streamlit and Plotly  
+- Clean code architecture and modular design  
+- Communicating complex trends to diverse audiences  
+
+It also improved my skills in collaborative version control, open-source licensing, and sustainable development framing.
+
+---
 
 ---
 
@@ -22,7 +79,7 @@ The project uses the *GloHydroRes* dataset (Shah et al., 2025), which integrates
 
 ---
 
-## Project Directory
+## Repository Structure and Navigation
 
 ```
 GloHydroRes-VizLab/
@@ -36,6 +93,8 @@ GloHydroRes-VizLab/
 │   └── main.py                            # Master script for visualization generation
 ├── requirements.txt                       # Python dependencies
 └── README.md                              # Project documentation
+----Demo Video.mp4
+----poster.pdf
 ```
 
 ---
@@ -93,20 +152,6 @@ This dashboard visualizes global hydropower infrastructure using multiple intera
 - Color schemes safe for color vision deficiencies (e.g., Viridis)
 - Clear legends and axis labels
 - Scalable vector outputs for readability
-
-## Sustainable Development Goals
-
-![Sustainable Development Goals](SDG.png)
-
-### SDG 7: Affordable and Clean Energy
-
-Hydropower is a key renewable energy source that contributes significantly to global clean energy supply. This project supports SDG 7 by:
-
-- Promoting transparency in hydropower infrastructure data  
-- Enabling better planning and optimization through data visualization  
-- Highlighting both opportunities and trade-offs in sustainable energy development
-
-By integrating hydropower data into an accessible dashboard, our project encourages evidence-based approaches to clean and affordable energy for all.
 
 ---
 
