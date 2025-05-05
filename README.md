@@ -32,8 +32,7 @@
 
 🔗 **[Live Dashboard](https://info301-dash-dashboard.onrender.com/)**  
 
-🎥 **Demo Video Preview:**  
-<video src="Demo Video.mp4" controls width="100%"></video>  
+🎥 **Demo Video:** [Click to view](Demo%20Video.mp4)
 
 🖼️ **Poster Preview:**  [View Poster](Poster.pdf)
 
