@@ -74,10 +74,17 @@ Each plot will be rendered interactively in your browser or window.
 
 ## Visual Modules
 
-- **Top Hydropower Countries**: Bar chart ranking by installed capacity  
-- **Commissioning Year Histogram**: Distribution of facilities by year  
-- **Facility Map**: Interactive map with capacity-encoded markers
-- **Interactive Dashboard (Built with Streamlit)**: Explore the Full Dashboard Here » [Render-Dashboard](https://info301-dash-dashboard.onrender.com/)
+This dashboard visualizes global hydropower infrastructure using multiple interactive visualizations powered by **Streamlit** and **Plotly**:
+
+- **Choropleth Map**: Displays total installed hydropower capacity by country using ISO3 codes and color intensity  
+- **Bubble Map**: Visualizes individual plant locations with bubble size proportional to reservoir volume  
+- **Sunburst Chart**: Shows capacity distribution in a hierarchical structure: Country → Facility  
+- **Time Series Plot**: Tracks installed hydropower capacity over time by country (multi-selectable)  
+- **Animated Evolution Map**: Reveals spatiotemporal growth of facilities year by year  
+- **Treemap**: Highlights facility and country contributions in proportional tree structure  
+
+> **Interactive Dashboard (Built with Streamlit)**  
+> [Explore the Live App »](https://info301-dash-dashboard.onrender.com/)
 
 ---
 
