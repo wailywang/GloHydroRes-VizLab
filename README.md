@@ -49,7 +49,7 @@
 
 ## Statement of Contribution to SDGs
 
-![SDG 7](https://sdgs.un.org/sites/default/files/2020-07/7_0.png)
+![SDG 7](SDG.png)
 
 This project contributes to **UN Sustainable Development Goal 7: Affordable and Clean Energy** by:
 
