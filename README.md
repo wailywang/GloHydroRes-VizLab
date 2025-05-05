@@ -140,7 +140,9 @@ To cite this project or dataset in academic work:
 
 ## Acknowledgements
 
-This project was completed as part of the course INFOSCI 301 – Data Visualization and Information Aesthetics at Duke Kunshan University. We would like to sincerely thank Prof. Luyao Zhang for her guidance throughout the semester, and Prof. Ming-Chun Huang for his valuable feedback during the DKU Digital Technology for Sustainability Symposium. Special thanks also go to Dr. Dongping Liu and Dr. David Schaaf for their helpful insights and encouragement during the development of this project. Lastly, we thank my classmates in INFOSCI 301 for their thoughtful input and collaboration during the semester.
+This project was completed as part of the course INFOSCI 301 – Data Visualization and Information Aesthetics at Duke Kunshan University. We would like to sincerely thank Prof. Luyao Zhang for her guidance throughout the semester, and Prof. Ming-Chun Huang for his valuable feedback during the DKU Digital Technology for Sustainability Symposium. Special thanks also go to Dr. Dongping Liu and Dr. David Schaaf for their helpful insights and encouragement during the development of this project. Lastly, we thank my classmates in INFOSCI 301 for their thoughtful input and collaboration during the semester. 
+
+This project was made possible with the support of AIGC tools such as ChatGPT and open-source software libraries including Plotly, Pandas, and Dash, which enabled the development of our interactive dashboard.
 
 ---
 
